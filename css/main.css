@@ -1,0 +1,20 @@
+body {
+  height: 100vh;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cicle-menu__avatar {
+  width: var(--size);
+  height: var(--size);
+  border-radius: var(--size);
+  background: url("https://cdn-icons-png.flaticon.com/128/4427/4427398.png") center/100% auto no-repeat;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 2px 4px 8px #000;
+          box-shadow: 2px 4px 8px #000;
+}/*# sourceMappingURL=main.css.map */

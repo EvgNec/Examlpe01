@@ -1,30 +1,7 @@
 :root {
-  /* основний колір тексту */
-  --primary_text-color: #757575;
-  /* колір тексту заголовків */
-  --title-text-color: #212121;
-  /* основний білий колір*/
-  --primary-white-color: #ffffff;
-  /* вторичний чорний колір*/
-  --secondary-black-color: #000000;
-  /* вторичний чорний колір*/
-  --secondary-white-color-opacity: rgba(255, 255, 255, 0.6);
-  /* колір акценту*/
-  --accent_color: #2196f3;
+  --size: 200px;
 
-  /* колір фону */
-  --primari-bg-color: #f5f5f5;
-
-  --secondary-grey-bg-color: #afb1b8;
-  /* колір фону */
-  --primari-black-bg-color: #2f303a;
-  /* вторичний білий колір фону */
-  --secondary-bg-color: #f5f4fa;
-
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  
-  --size-mobile: 480px;
-  --size-tablets: 768px;
-  --size-pc: 1200px;
+  // --size-mobile: 480px;
+  // --size-tablets: 768px;
+  // --size-pc: 1200px;
 }
