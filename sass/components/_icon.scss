@@ -1,13 +1,13 @@
-body{
-    height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+body {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 .container {
+  position: relative;
 }
 .cicle-menu__avatar {
-  
   width: var(--size);
   height: var(--size);
   border-radius: var(--size);
@@ -16,7 +16,77 @@ body{
   border: 5px solid #fff;
   box-shadow: 2px 4px 8px #000;
 }
-.cicle-menu__item {
+.cicle-menu__item,
+.cicle-menu__btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--size);
+  height: var(--size);
+  transform: rotate(0);
+  transition: all 7ms ease-in;
 }
+.cicle-menu__btn div {
+  transform: rotate(calc(var(--deg) * 0.01));
+  cursor: pointer;
+}
+.cicle-menu__btn.open div {
+  transform: rotate(calc(var(--deg) * -1));
+}
+
+.cicle-menu__item div,
+.cicle-menu__btn div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  --size_ic: calc(var(--size) / 3);
+  width: var(--size_ic);
+  height: var(--size_ic);
+  border-radius: var(--size_ic);
+  outline: 1px solid blue;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: #3b97d3;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.301);
+}
+
+.cicle-menu__item div {
+  --size_ic: calc(var(--size) / 5);
+  right: 5%;
+  bottom: 5%;
+}
+
+.cicle-menu.open .cicle-menu__item div {
+  right: 2%;
+  bottom: 2%;
+}
+
+.cicle-menu.open .cicle-menu__item {
+  transform: rotate(calc(var(--deg) * 0.9 * -1));
+}
+
+.cicle-menu.open .cicle-menu__item:nth-child(2) {
+  transform: rotate(calc(var(--deg) * 0.8 * -2));
+}
+
+.cicle-menu.open .cicle-menu__item:nth-child(3) {
+  transform: rotate(calc(var(--deg) * 0.75 * -3));
+}
+
+.cicle-menu.open .cicle-menu__item div {
+  transform: rotate(calc(var(--deg) * 0.9 * 1));
+}
+
+.cicle-menu.open .cicle-menu__item:nth-child(2) div {
+  transform: rotate(calc(var(--deg) * 0.8 * 2));
+}
+
+.cicle-menu.open .cicle-menu__item:nth-child(3) div {
+  transform: rotate(calc(var(--deg) * 0.75 * 3));
+}
+
 .material-symbols-outlined {
+  font-size: calc(var(--size_ic) / 1.7);
+  color: #fff;
 }
